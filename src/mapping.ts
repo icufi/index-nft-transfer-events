@@ -35,28 +35,6 @@ export function handleTransfer(event: TransferEvent): void {
           token.description = description.toString();
           token.ipfsURI = 'infura-ipfs.io/ipfs/' + ipfshash + token.tokenURI;
         }
-
-        // const toadAttr = value.get('attributes');
-        // if (toadAttr) {
-        //   let toadAttrData = toadAttr.toObject();
-        //   const type = toadAttrData.get('trait_type');
-        //   if (type) {
-        //     token.type = type.toString();
-        //   }
-
-        //   // const birthChart = covenData.get('birthChart');
-        //   // if (birthChart) {
-        //   //   const birthChartData = birthChart.toObject();
-        //   //   const sun = birthChartData.get('sun');
-        //   //   const moon = birthChartData.get('moon');
-        //   //   const rising = birthChartData.get('rising');
-        //   //   if (sun && moon && rising) {
-        //   //     token.sun = sun.toString();
-        //   //     token.moon = moon.toString();
-        //   //     token.rising = rising.toString();
-        //   //   }
-        //   // }
-        // }
       }
     }
   }
